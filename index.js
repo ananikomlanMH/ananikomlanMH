@@ -5,7 +5,7 @@ const path = require("path");
 
 async function main() {
     const readmeTemplate = (
-        await fs.readFile(path.join(process.cwd(), "./README.template.md"))
+        await fs.readFile(path.join(process.cwd(), "./README.md"))
     ).toString("utf-8");
 
     const office_quote = await (
